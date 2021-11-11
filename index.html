@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Eeqan's Worm Game</title>
+    <style>
+        body { font-family: 'Courier New', Courier, monospace; }
+        #snakeboard {
+          background:#E8E4C9;
+        }
+        td { border: 1px solid black; margin: 0; padding:0; }
+        .game { width:406px;}
+      </style>
+</head> 
+<body>
+    <h1>Eeqan's Snake Game</h1>
+    <hr />
+    <div class="game">
+      <table>
+        <tr>
+          <td style="padding:0 5px;">
+            <span style="width:150px; display:inline-block;">Score: <span id="score">0</span></span>
+            <span style="width:90px; display:inline-block; text-align: center;" id="countdown">0</span>
+            <san style="text-align:right; float:right;">Speed: <span id="speed">0</span>ms</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <canvas id="snakeboard" width="400" height="400"></canvas>  
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="snakes.js"></script>
+</body>   
+</html>
